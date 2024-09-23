@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <h1 class="title">Task Management System</h1>
+        <div class="wrapper">
+
+            <div class="list">
+                <div class="tasks"> </div>
+            </div>
+            
+            <div class="form">
+                <h2 class="form-title">Add new Task</h2>
+                <form action="javascript:void(0)" id="task_create_form">
+                    <input type="hidden" name="task_index" id="task_index">
+                    <div class="form-group">
+                        <label for="">Title: </label>
+                        <input type="text" name="title" id="title" class="form-item">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Description: </label>
+                        <textarea name="description" id="description" class="form-item" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-button-group">
+                        <button type="submit">
+                            <i class="fa fa-plus"></i> Save
+                        </button>
+                        <button type="reset" id="clear_btn">
+                            <i class="fa fa-eraser"></i> Clear
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    <script src="js/v2/util.js"></script>
+    <script src="js/v2/script.js"></script>
+    </body>
+</html>

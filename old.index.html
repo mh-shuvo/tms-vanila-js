@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <h1 class="title">Task Management System</h1>
+        <div class="wrapper">
+            <div class="list">
+
+                <div class="tasks">
+
+                    <!-- <div class="task">
+                        <div>
+                            <h3 class="task-title">(T#01)Meeting with Akhilesh at 10:00AM</h3>
+                            <p class="task-description">We will discuss about out upcoming CRM project. </p>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" class="complete_checkbox">
+                            <button type="button" class="edit_btn">
+                                <i class="fa fa-edit"></i>
+                            </button>
+                            <button type="button" class="delete_btn">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+            <div class="form">
+                <h2 class="form-title">Add new Task</h2>
+                <form action="javascript:void(0)" id="task_create_form">
+                    <div class="form-group">
+                        <label for="">Title: </label>
+                        <input type="text" name="title" id="title" class="form-item">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Description: </label>
+                        <textarea name="description" id="description" class="form-item" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-button-group">
+                        <button type="submit">
+                            <i class="fa fa-plus"></i> Save
+                        </button>
+                        <button type="reset" id="clear_btn">
+                            <i class="fa fa-eraser"></i> Clear
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    <script src="js/util.js"></script>
+    <script src="js/script.js"></script>
+    </body>
+</html>

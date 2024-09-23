@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Light Bulb Simulator</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #bulb {
+            font-size: 100px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="bulb">
+        <i class="fa fa-lightbulb" aria-hidden="true"></i>
+    </div>
+    <button onclick="turnOn()">On</button>
+    <button onclick="turnRed()">Turn Red</button>
+    <button onclick="turnGreen()">Turn Green</button>
+    <button onclick="turnOff()">Turn Off</button>
+</div>
+
+<script>
+   
+    function turnOn() {
+        document.getElementById('bulb').style.color = 'yellow';
+    }
+
+    function turnRed() {
+        document.getElementById('bulb').style.color = 'red';
+    }
+
+    function turnGreen() {
+        document.getElementById('bulb').style.color = 'green';
+    }
+
+    function turnOff() {
+        document.getElementById('bulb').style.color = 'black';
+    }
+</script>
+
+</body>
+</html>

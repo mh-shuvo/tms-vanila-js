@@ -1,0 +1,80 @@
+.title{
+    text-align: center;
+}
+.wrapper{
+    width: 70%;
+    display:flex;
+    margin-left: 15%;
+}
+.list{
+    width: 60%;
+    height: auto;
+    min-height: 500px;
+    border: 1px solid black;
+}
+
+.form{
+    width: 40%;
+    height: auto;
+    min-height: 500px;
+    border: 1px solid black;
+}
+.tasks{
+    padding: 10px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.edit_btn{
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.delete_btn{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form{
+    padding: 10px;
+}
+.form-title{
+    text-align: center;
+}
+.form-group{
+    margin: 20px;
+}
+.form-group label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-item{
+    min-height: 20px;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.form-button-group{
+    text-align: center;
+}
+.form-button-group button{
+    height: 30px;
+    width: auto;
+    padding: 5px;
+    cursor: pointer;
+}
