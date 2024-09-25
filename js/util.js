@@ -26,7 +26,7 @@ let taskList = [];
 const createTaskHTML = (task) => {
     let taskTitle = `(${task.task_id}) ${task.title}`;
     let taskButtons = `
-        <input type="checkbox" class="complete_checkbox" data-task_id="${task.task_id}">
+        <input type="checkbox" class="complete_checkbox" name="complete_checkbox[]" id="complete_checkbox_${task.task_id}" data-task_id="${task.task_id}">
         <button type="button" class="edit_btn fa fa-edit" data-task_id="${task.task_id}"></button>`;
 
     if (task.has_completed) {
@@ -53,6 +53,7 @@ const displayAllTasks = (refreshRequired = false) => {
     let taskHTML = "";
 
     const tasksFromStorage = localStorage.getItem('tasks');
+    
     if (tasksFromStorage && refreshRequired) {
         taskList = JSON.parse(tasksFromStorage);
     }
@@ -85,6 +86,7 @@ const markTaskComplete = (taskId) => {
     const taskIndex = findTaskIndexById(taskId);
     if (taskIndex >= 0) {
         taskList[taskIndex].has_completed = true;
+        updateTaskStorage()
         refreshTaskList();
     }
 };
